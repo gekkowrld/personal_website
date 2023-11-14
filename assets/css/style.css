@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Space+Grotesk&display=swap');
+
+/* Define constants to use in the website */
+
+:root {
+	--color-grey-bg: #ADADAD;
+	--color-blue-text: #1C848E;
+	--font-title: 'IBM Plex Mono', monospace;
+	--font-body: 'Space Grotesk', sans-serif;
+	--color-purple-text: #bf00ff;
+	--color-yellow-highlight: #B5A45C;
+}
+
+/* Basic CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	background: var(--color-grey-bg);
+	font-family: var(--font-body);
+}
+
+p {
+	color: var(--color-blue-text);
+	font-family: var(--font-body);
+}
+
+a, a:link, a:visited {
+	color: var(--color-purple-text);
+	text-decoration: none;
+	font-family: var(--font-body);
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+header {
+	margin: 3rem;
+}
+
+header ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+hr {
+	background-color: var(--color-blue-text);
+	overflow: visible;
+	height: 10px;
+	width: 90%;
+	border: none;
+}
+
+.current_page a {
+	color: var(--color-yellow-highlight);
+	background-color: var(--color-blue-text);
+	padding: 5px;
+	border-radius: 5px;
+}
+
+footer {
+	margin-top: auto;
+	text-align: center;
+	font-family: var(--font-title);
+	font-weight: bold;
+	font-size: 27px;
+}
+
+.info_note {
+	font-size: 17px;
+	color: red;
+	font-weight: bold;
+	padding: 2rem;
+}
