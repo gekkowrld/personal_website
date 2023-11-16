@@ -1,0 +1,27 @@
+main {
+	display: flex;
+	flex-direction: column;
+	text-align: right;
+}
+h1 {
+	font-size: 32px;
+}
+
+q {
+	display: block;
+	text-align: center;
+}
+
+.quote_q {
+	font-size: 27px;
+}
+
+.quote_cite {
+	font-size: 21px;
+	display: block;
+	text-align: center;
+}
+
+.quote_cite::before {
+	content: "~";
+}
