@@ -35,10 +35,6 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 
-body {
-	line-height: 1;
-}
-
 ol, ul {
 	list-style: none;
 }
@@ -57,7 +53,30 @@ table {
 	border-spacing: 0;
 }
 
+/* Since the standard scrollbar is only implemented in Firefox, there will be two implementation of the same thing
+ *
+ * Look at this for webkit: https://developer.mozilla.org/en-US/docs/Web/CSS/::-webkit-scrollbar
+ * Look at this for scrollbar-color: https://developer.mozilla.org/en-US/docs/Web/CSS/scrollbar-color
+ * and for width: https://developer.mozilla.org/en-US/docs/Web/CSS/scrollbar-width
+ * */
+
+
+html {
+	scrollbar-color: var(--color-yellow-highlight) var(--color-blue-text);
+	scroll-width: thin;
+}
+
+::-webkit-scrollbar {
+	width: 8px;
+	background-color: var(--color-yellow-highlight);
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: var(--color-blue-text);
+}
+
 body {
+	line-height: 1;
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
@@ -65,9 +84,21 @@ body {
 	font-family: var(--font-body);
 }
 
+h1, h2, h3, h4, h5 {
+	font-family: var(--font-title);
+	font-weight: 900;
+	text-align: center;
+	font-size: 32px;
+}
+
 p {
 	color: var(--color-blue-text);
 	font-family: var(--font-body);
+	line-height: 1.5;
+}
+
+i {
+	font-style: italic;
 }
 
 a, a:link, a:visited {
@@ -118,4 +149,8 @@ footer {
 	color: red;
 	font-weight: bold;
 	padding: 2rem;
+}
+
+main {
+	padding: 3rem;
 }
