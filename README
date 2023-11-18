@@ -1,6 +1,20 @@
-This is a "personal website".
+Personal Website
+================
 
 It is created with mostly html, css and js.
 
 The project runs directly on the browser (any decent modern browser) without any special configurations.
 
+Hosting
+=======
+
+The website is hosted on github pages.
+Github assigns a free domain to each user.
+This can be used to deploy static websites like this site.
+
+The website url is at <https://gekkowrld.github.io/personal_website>
+
+Disclaimer
+==========
+
+This website is not optimized for small devices (less than 830px)

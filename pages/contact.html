@@ -5,6 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="../assets/css/style.css">
 	<link rel="shortcut icon" href="https://github.com/gekkowrld.png" type="image/x-icon">
+	<link rel="stylesheet" href="../assets/css/contact.css">
+	<script defer src="../assets/js/script.js"></script>
 	<title>Contact Information</title>
 </head>
 <body>
@@ -18,5 +20,26 @@
 			<li class="current_page"><a href="contact.html">Contact Information</a></li>
 	</header>
 	<hr>
+	<main>
+		<p>If interested, you can contact me through this form or send me an email to readdocs70 [at] gmail.com</p>
+		<form
+				action="mailto:readdocs70@gmail.com"
+				method="POST"
+				name="msgcontact"
+			>
+			<label for="name">Your Name</label>
+			<input type="text" id="name" name="name" required>
+			<label for="msg">Message</label>
+			<textarea id="msg" rows="6" cols="20" required></textarea>
+		</form>
+
+			<p>The email provided here is on a no-reply basis, and I won't respond to any emails.</p>
+            <p>Please refrain from sending sensitive or private information. Only share information that you are comfortable with being public.</p>
+	</main>
+    <footer>
+        <hr>
+        © Gekko Wrld
+        <p class="info_note">Disclaimer: The information presented on this website is provided "as is" and may not be entirely accurate or complete. It is advisable to treat the content with caution, and it should not be used as definitive proof or evidence. The accuracy of the information is not guaranteed and should not be relied upon in legal or formal contexts.</p>
+    </footer>
 </body>
 </html>
