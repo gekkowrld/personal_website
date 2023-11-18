@@ -1,6 +1,5 @@
 let api_url = "https://api.quotable.io/random?maxLength=50";
 let quote = fetch(api_url)
-<<<<<<< HEAD
 			.then(response => response.json())
 			.then(data => {
 				let page_quote = document.querySelector("aside");
@@ -13,8 +12,6 @@ let quote = fetch(api_url)
 				page_quote.appendChild(q_span);
 				page_quote.appendChild(a_span);
 			});
-
-=======
 	.then((response) => response.json())
 	.then((data) => {
 		let page_quote = document.querySelector("aside");
@@ -89,4 +86,3 @@ function updateButton() {
 		sendBtn.style.cursor = "not-allowed";
 	}
 }
->>>>>>> refs/remotes/origin/gekkowrld
